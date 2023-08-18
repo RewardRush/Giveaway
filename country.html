@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Country Selection</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  select {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* Add scrollbar */
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Welcome to Our Website</h1>
+  <p>Please select your country to continue:</p>
+  <select id="countrySelect">
+    <option value="usa">United States</option>
+    <option value="canada">Canada</option>
+    <option value="uk">United Kingdom</option>
+    <option value="australia">Australia</option>
+    <!-- Add more countries here -->
+    <!-- ... -->
+    <option value="japan">Japan</option>
+    <option value="china">China</option>
+    <option value="brazil">Brazil</option>
+    <option value="india">India</option>
+    <option value="russia">Russia</option>
+    <!-- ... -->
+  </select>
+  <button id="selectButton">Continue</button>
+</div>
+
+<script>
+  const selectButton = document.getElementById('selectButton');
+  const countrySelect = document.getElementById('countrySelect');
+
+  selectButton.addEventListener('click', () => {
+    const selectedCountry = countrySelect.value;
+    switch (selectedCountry) {
+      case 'usa':
+        window.location.href = 'https://www.youtube.com/';
+        break;
+      case 'canada':
+        window.location.href = 'https://www.youtube.com/';
+        break;
+      case 'uk':
+        window.location.href = 'https://www.youtube.com/';
+        break;
+      case 'australia':
+        window.location.href = 'https://www.youtube.com/';
+        break;
+      // Add more cases for other countries
+      default:
+        // Redirect to a default URL if no country matches
+        window.location.href = 'https://www.youtube.com/';
+        break;
+    }
+  });
+</script>
+</body>
+</html>
