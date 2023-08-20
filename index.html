@@ -1,196 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="verify-admitad" content="4990b7921f" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPA Marketing Landing Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-        }
-
-        .header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-        }
-
-        .menu-icon {
-            display: block;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-            cursor: pointer;
-        }
-
-        .menu-icon span {
-            display: block;
-            width: 30px;
-            height: 3px;
-            margin: 5px 0;
-            background-color: white;
-        }
-
-        .menu-container {
-            position: fixed;
-            top: 0;
-            left: -250px;
-            width: 250px;
-            height: 100%;
-            background-color: #007bff;
-            z-index: 999;
-            transition: left 0.3s, box-shadow 0.3s;
-        }
-
-        .menu-container.open {
-            left: 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .menu {
-            list-style: none;
-            padding: 0;
-            margin-top: 80px;
-        }
-
-        .menu li {
-            padding: 15px;
-            text-align: center;
-        }
-
-        .menu li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .content {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-        }
-
-        .offer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .offer {
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .offer h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .offer img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        .claim-btn {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            text-decoration: none;
-        }
-
-        .claim-btn:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <div class="menu-icon" id="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
+    <head>
+        <meta name="verify-admitad" content="4990b7921f"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CPA Marketing Landing Page</title>
+        <style>body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f7f7f7; } .header { background-color: #36454f; color: white; padding: 20px; text-align: center; position: relative; } .menu-icon { display: block; position: absolute; top: 20px; left: 20px; z-index: 1000; cursor: pointer; } .menu-icon span { display: block; width: 30px; height: 3px; margin: 5px 0; background-color: white; } .menu-container { position: fixed; top: 0; left: -250px; width: 250px; height: 100%; background-color: #36454f; z-index: 999; transition: left 0.3s, box-shadow 0.3s; } .menu-container.open { left: 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); } .menu { list-style: none; padding: 0; margin-top: 80px; } .menu li { padding: 15px; text-align: center; } .menu li a { color: white; text-decoration: none; font-size: 18px; } .container { max-width: 1200px; margin: 0 auto; padding: 20px; } .content { background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; } .offer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; } .offer { padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); } .offer h2 { font-size: 24px; margin-bottom: 10px; } .offer img { max-width: 100%; height: auto; margin-bottom: 10px; } .claim-btn { background-color: #f7a400; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s; text-decoration: none; } .claim-btn:hover { background-color: #0056b3; }</style>
+        <link href="css/theme.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="menu-icon" id="menu-icon"><span></span><span></span><span></span>
+            </div>
+            <div class="menu-container" id="menu-container">
+                <ul class="menu">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="giftcard.html">GiftCard Giveaway</a>
+                    </li>
+                    <li>
+                        <a href="#">iPhone Giveaway</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <h1>Discover Exclusive Offers!</h1>
+            <p>Explore our handpicked offers and claim rewards.</p>
         </div>
-        <div class="menu-container" id="menu-container">
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="giftcard.html">GiftCard Giveaway</a></li>
-                <li><a href="#">iPhone Giveaway</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <h1>Discover Exclusive Offers!</h1>
-        <p>Explore our handpicked offers and claim rewards.</p>
-    </div>
-    <div class="container">
-        <div class="content">
-            <div class="offer-grid">
-                <div class="offer">
-                    <h2>Special Discount</h2>
-                    <img src="paypal.jpg" alt="Offer 1" />
-                    <p>Save big with our limited-time discount. Don't miss out!</p>
-                    <a href="https://www.google.com" class="claim-btn">Claim Offer</a>
-                </div>
-                <div class="offer">
-                    <h2>Free Trial</h2>
-                    <img src="paypal.jpg" alt="Offer 2" />
-                    <p>Experience our premium service with a free trial.</p>
-                    <a href="#" class="claim-btn">Claim Offer</a>
-                </div>
-                <div class="offer">
-                    <h2>Exclusive Access</h2>
-                    <img src="paypal.jpg" alt="Offer 3" />
-                    <p>Get exclusive access to premium content and features.</p>
-                    <a href="#" class="claim-btn">Claim Offer</a>
-                </div>
-                <div class="offer">
-                    <h2>Cashback Rewards</h2>
-                    <img src="paypal.jpg" alt="Offer 4" />
-                    <p>Earn cashback rewards on your purchases.</p>
-                    <a href="#" class="claim-btn">Claim Offer</a>
-                </div>
-                <div class="offer">
-                    <h2>Special Deal</h2>
-                    <img src="paypal.jpg" alt="Offer 5" />
-                    <p>Get the deal of a lifetime with this exclusive offer.</p>
-                    <a href="#" class="claim-btn">Claim Offer</a>
-                </div>
-                <div class="offer">
-                    <h2>Membership Benef</h2>
-                    <img src="paypal.jpg" alt="Offer 6" />
-                    <p>Unlock amazing perks and benefits with our membership.</p>
-                    <a href="#" class="claim-btn">Claim Offer</a>
+        <div class="container">
+            <div class="content">
+                <div class="offer-grid">
+                    <div class="offer">
+                        <h2>i-Phone Giveaway</h2>
+                        <img src="iphone.jpg" alt="Offer 1"/>
+                        <p>Participate in the giveaway a win a free iPhone. Don't miss out!</p><a href="https://trotrkr.com/show.php?l=0&u=1609046&id=47482" class="claim-btn">Claim Offer</a>
+                    </div>
+                    <div class="offer">
+                        <h2>Free Gift card</h2>
+                        <img src="amazon2.jpg" alt="Offer 2"/>
+                        <p>Save big with a free Amazon Gift card</p><a href="giftcard.html" class="claim-btn">Claim Offer</a>
+                    </div>
+                    <div class="offer">
+                        <h2>Free Trial</h2>
+                        <img src="short.jpg" alt="Offer 2"/>
+                        <p>Krijg toegang tot een Boxershort Trial!</p><a href="https://trotrkr.com/show.php?l=0&u=1609046&id=51381" class="claim-btn">Claim Offer</a>
+                    </div>
+                    <div class="offer">
+                        <h3>Kostenloses Minecraft!</h3>
+                        <img src="minecraft.jpg" alt="Offer 3"/>
+                        <p>Geben Sie Ihre Handynummer ein, um loszulegen.</p><a href="https://trotrkr.com/show.php?l=0&u=1609046&id=55670" class="claim-btn">Claim Offer</a>
+                    </div>
+                    <div class="offer">
+                        <h2>Cashback Rewards</h2>
+                        <img src="dummy.jpg" alt="Offer 4"/>
+                        <p>Earn cashback rewards on your purchases.</p><a href="#" class="claim-btn">Claim Offer</a>
+                    </div>
+                    <div class="offer">
+                        <h2>Special Deal</h2>
+                        <img src="dummy.jpg" alt="Offer 5"/>
+                        <p>Get the deal of a lifetime with this exclusive offer.</p><a href="#" class="claim-btn">Claim Offer</a>
+                    </div>
+                    <div class="offer">
+                        <h3>Membership Benefit</h3>
+                        <img src="dummy.jpg" alt="Offer 6"/>
+                        <p>Unlock amazing perks and benefits with our membership.</p><a href="#" class="claim-btn">Claim Offer</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script>
+        <script>
         document.getElementById('menu-icon').addEventListener('click', function () {
             document.getElementById('menu-container').classList.toggle('open');
         });
     </script>
-</body>
+    </body>
 </html>

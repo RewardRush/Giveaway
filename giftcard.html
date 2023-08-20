@@ -1,196 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gift Card Rewards - New Landing</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-        }
-
-        .header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-        }
-
-        .menu-icon {
-            display: block;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-            cursor: pointer;
-        }
-
-        .menu-icon span {
-            display: block;
-            width: 30px;
-            height: 3px;
-            margin: 5px 0;
-            background-color: white;
-        }
-
-        .menu-container {
-            position: fixed;
-            top: 0;
-            left: -250px;
-            width: 250px;
-            height: 100%;
-            background-color: #007bff;
-            z-index: 999;
-            transition: left 0.3s;
-        }
-
-        .menu-container.open {
-            left: 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow when open */
-        }
-
-        .menu {
-            list-style: none;
-            padding: 0;
-            margin-top: 80px;
-        }
-
-        .menu li {
-            padding: 15px;
-            text-align: center;
-        }
-
-        .menu li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .content {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-        }
-
-        .why-choose {
-            margin-bottom: 40px;
-        }
-
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .image img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Country selection box styles */
-        .signup-box {
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            overflow-y: auto;
-            max-height: 150px;
-        }
-
-        .signup-box label {
-            font-size: 18px;
-            font-weight: bold;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        select,
-        .btn {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        .btn {
-            background-color: #007bff;
-            color: white;
-            transition: background-color 0.3s;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <div class="menu-icon" id="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu-container" id="menu-container">
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">GiftCard Giveaway</a></li>
-                <li><a href="#">iPhone Giveaway</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <h1>Unlock Amazing Gift Card Rewards</h1>
-        <p>Explore our rewards program and start earning exciting gift cards today.</p>
-    </div>
-    <div class="container">
-        <div class="content">
-            <div class="signup-box">
-                <label for="country">Select Your Country:</label>
-                <select id="country" name="country">
-                    <option value="us">United States</option>
-                    <option value="ca">Canada</option>
-                    <!-- Add more options here -->
-                </select>
-                <button class="btn" id="signup-button">Get Started</button>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gift Card Rewards - New Landing</title>
+        <style>body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f7f7f7; } .header { background-color: #36454f; color: white; padding: 20px; text-align: center; position: relative; } .menu-icon { display: block; position: absolute; top: 20px; left: 20px; z-index: 1000; cursor: pointer; } .menu-icon span { display: block; width: 30px; height: 3px; margin: 5px 0; background-color: white; } .menu-container { position: fixed; top: 0; left: -250px; width: 250px; height: 100%; background-color: #36454f; z-index: 999; transition: left 0.3s; } .menu-container.open { left: 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  /* Add shadow when open */ } .menu { list-style: none; padding: 0; margin-top: 80px; } .menu li { padding: 15px; text-align: center; } .menu li a { color: white; text-decoration: none; font-size: 18px; } .container { max-width: 600px; margin: 0 auto; padding: 20px; } .content { background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; } .why-choose { margin-bottom: 40px; } .image-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px; } .image img { max-width: 100%; height: auto; } /* Country selection box styles */.signup-box { padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; overflow-y: auto; max-height: 150px; } .signup-box label { font-size: 18px; font-weight: bold; display: block; margin-bottom: 10px; } select, .btn { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f9f9f9; font-size: 16px; margin-bottom: 10px; } .btn { background-color: #f7a400; color: white; transition: background-color 0.3s; cursor: pointer; } .btn:hover { background-color: #0056b3; }</style>
+        <link href="css/theme.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="menu-icon" id="menu-icon"><span></span><span></span><span></span>
             </div>
-            <div class="why-choose">
-                <h2>Why Choose Us?</h2>
-                <p>Experience the joy of earning gift cards by completing simple tasks. Join our community of satisfied users and unlock fantastic rewards!</p>
+            <div class="menu-container" id="menu-container">
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">GiftCard Giveaway</a>
+                    </li>
+                    <li>
+                        <a href="#">iPhone Giveaway</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="image-grid">
-                <div class="image">
-                    <img src="paypal.jpg" alt="Gift Card 1" />
+            <h1>Unlock Gift Card Rewards</h1>
+            <p>Choose your country below to start earning gift card rewards.</p>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="signup-box">
+                    <label for="country">Select Your Country:</label>
+                    <select id="country" name="country">
+                        <option value="us">United States</option>
+                        <option value="GB">United KIngdom</option>
+                        <option value="ZN">New Zealand</option>
+                        <option value="CA">Canada</option>
+                        <!-- Add more options here -->
+                    </select>
+                    <button class="btn" id="signup-button">Get Started</button>
                 </div>
-                <div class="image">
-                    <img src="paypal.jpg" alt="Gift Card 2" />
-                </div>
-                <div class="image">
-                    <img src="paypal.jpg" alt="Gift Card 3" />
-                </div>
-                <div class="image">
-                    <img src="paypal.jpg" alt="Gift Card 4" />
+                <div class="why-choose">
+                    <h2>Why Choose Us?</h2>
+                    <p>Experience the joy of earning gift cards by completing simple tasks. Join our community of satisfied users and unlock fantastic rewards!</p>
                 </div>
             </div>
         </div>
-    </div>
-    <script>
+        <script>
         document.getElementById('menu-icon').addEventListener('click', function () {
             document.getElementById('menu-container').classList.toggle('open');
         });
@@ -198,12 +56,16 @@
         document.getElementById('signup-button').addEventListener('click', function () {
             var country = document.getElementById('country').value;
             if (country === 'us') {
-                window.location.href = 'https://www.youtube.com';
-            } else if (country === 'ca') {
-                window.location.href = 'https://www.facebook.com';
+                window.location.href = 'https://trkrspace.com/1501166';
+            } else if (country === 'GB'){
+                window.location.href = 'https://trotrkr.com/show.php?l=0&u=1609046&id=53198';
+            } else if (country === 'CA') {
+                window.location.href = 'https://trkrspace.com/1501166';
+            } else if (country === 'ZN') {
+                window.location.href = 'https://trkrspace.com/1501166';
             }
             // Add more country options and redirections as needed
         });
     </script>
-</body>
+    </body>
 </html>
