@@ -384,7 +384,7 @@
       .container {
         max-width: 100%;
         margin: 0 auto;
-        padding: 20px;
+        padding: 0px;
         display: flex;
         flex-direction: row;
       }
@@ -393,8 +393,9 @@
         background-color: transparent;
         border-radius: 10px;
         text-align: center;
-        padding-top: 100px;
         padding-bottom: 50px;
+        padding: 20px;
+        padding-top: 100px;
       }
     
       .offer-grid {
@@ -515,9 +516,16 @@
           background: linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%); /* W3C */
         }
     
-        .line {
+        #line {
           border-color:#666;
-          margin-top:50px;
+          margin-top:0px;
+          width: 100%;
+        }
+        .linebar{
+          margin-left: 40%;
+        }
+        .social {
+          padding: 20px;
         }
     
   }
