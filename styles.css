@@ -59,7 +59,11 @@
       }
       .header h1{ margin-top: -9px; margin-bottom: -5px;}
 
-      #netflixtitle{
+      #iphonetitle {
+        display: none;
+      }
+
+      #netflixtitle {
         display: none;
       }
 
@@ -242,7 +246,7 @@
         padding: 0;
         background-color: whitesmoke;
         background-attachment: fixed;
-        background-image: url('bg.jpg');
+        background-image: url('b.jpg');
         background-position: center top;
         background-repeat: no-repeat;
         width: 100%;
@@ -290,7 +294,7 @@
         left: -250px;
         width: 250px;
         height: 100%;
-        background-color: white;
+        background-color: whitesmoke;
         z-index: 999;
         transition: left 0.3s, box-shadow 0.3s;
       }
@@ -313,6 +317,26 @@
         padding-right: 30px;
         margin-top: 0;
       }
+      #iphonetitle {
+        display: flex;
+        color: black;
+        text-align: left;
+        font-size: small;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      #iphoneparagraph {
+        color: black;
+        text-align: left;
+        font-size: small;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      #iphone {
+        display: none;
+      }
+
       #netflixjobh2 {
         display: none;
       }
@@ -443,7 +467,7 @@
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
-          height: 70px;
+          height: 100px;
         
         
           -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 1px 1px 1px rgba(255,255,255,.44);
