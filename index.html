@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=deviceiwidth, initial-scale=1.0, maximum-scable=1.0, user-scalable=no;">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Rewardrush</title>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -44,27 +44,27 @@
       <div class="content">
         <div class="offer-grid">
           <div class="offer">
-            <h2>i-Phone Giveaway</h2>
+            <h2 id="iphone">i-Phone Giveaway</h2>
             <img src="iphone.jpg" alt="Offer 1" />
             <p>Participate in the giveaway a win a free iPhone. Don't miss out!</p>
             <a href="iphone.html" class="button big green">Claim Offer <span>One minute</span></a>
           </div>
           <div class="offer">
-            <h2>Free Gift card</h2>
+            <h2 id="giftcard">Free Gift card</h2>
             <img src="amazon2.jpg" alt="Offer 2" />
             <p>Save big with a free Amazon Gift card</p>
             <a href="giftcard.html" class="button big green">Claim Offer <span>One minute</span></a>
           </div>
           <div class="offer">
-            <h2>Free Trial</h2>
+            <h2 id="boxershort">Free Trial</h2>
             <img src="short.jpg" alt="Offer 2" />
             <p>Krijg toegang tot een Boxershort Trial!</p>
             <a href="https://trkrspace.com/show.php?l=0&u=1609046&id=51381" class="button big green">Claim Offer <span>One minute</span></a>
           </div>
           <div class="offer">
-            <h3>Kostenloses Minecraft!</h3>
+            <h3 id="mcdownload">Kostenloses Minecraft!</h3>
             <img src="minecraft.jpg" alt="Offer 3" />
-            <p>Geben Sie Ihre Handynummer ein, um loszulegen.</p>
+            <dev><p>Geben Sie Ihre Handynummer ein, um loszulegen.</p></dev>
             <a href="https://trotrkr.com/show.php?l=0&u=1609046&id=55670" class="button big green">Claim Offer <span>One minute</span></a>
           </div>
           <div class="offer">
@@ -80,7 +80,7 @@
             <a href="#" class="button big green">Claim Offer <span>One minute</span></a>
           </div>
           <div class="offer">
-            <h3>Membership Benefit</h3>
+            <h3 id="membership">Membership Benefit</h3>
             <img src="dummy.jpg" alt="Offer 6" />
             <p>Unlock amazing perks and benefits with our membership.</p>
             <a href="#" class="button big green">Claim Offer <span>One minute</span></a>
@@ -88,10 +88,6 @@
         </div>
       </div>
     </div>
-    <div class="linebar">
-      <hr id="line">
-    </div>
-    <div class="social"><p>Hi</p></div>
     <script>
       document.getElementById('menu-icon').addEventListener('click', function() {
         document.getElementById('menu-container').classList.toggle('open');
