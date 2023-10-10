@@ -11,6 +11,8 @@ body {
     height: 100px;
     width: 100%;
 }
+.logowhite {display: none;}
+#headertitle {display: none;}
 .topnav {
     overflow: hidden;
     background-color: transparent;
@@ -88,9 +90,19 @@ body {
     float: right;
     padding: 6px;
     border: none;
-    margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
+  }
+  #search-container {
+    margin-bottom: 33px;
+  }
+  #search-container input {
+    position: absolute;
+    right: 0;
+  }
+
+  .menu {
+    display: none;
   }
   #line1 {
     content: "";
@@ -125,6 +137,16 @@ body {
     z-index: 1;
     left: 0px;
   }
+
+  .sidepanel {
+    display: none;
+  }
+  .openbtn { 
+    display: none;
+  }
+  .sidepaneltitle {
+    display: none;
+  }
   
 .container {
     position: relative;
@@ -144,7 +166,7 @@ body {
     margin-left: 2px;
 }
 .post1 {
-    height: 300px;
+    height: 260px;
     width: 320px;
     background-color: whitesmoke;
     position: relative;
@@ -154,14 +176,14 @@ body {
     bottom: 5px;
 }
 .post2 {
-    height: 300px;
+    height: 260px;
     width: 320px;
     background-color: whitesmoke;
     position: relative;
     justify-content: center;
 }
 .post3 {
-    height: 300px;
+    height: 260px;
     width: 320px;
     background-color: whitesmoke;
     position: relative;
@@ -191,4 +213,166 @@ body {
 }
 #sidebarlist {
     padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: white;
+  }
+  .header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.topnav {
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 10px;
+  }
+  
+  .logowhite {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: start;
+    padding: 5px;
+  }
+  .banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    height: 70%;
+    margin-right: 345px;
+  }
+  #headertitle {
+    display: flex;
+    font-size: 16px;
+    position: absolute;
+    left: 50px;
+  }
+
+  .secondtopnav {
+    position: absolute;
+    left: 0px;
+    overflow: hidden;
+    color: #19667d;
+    display: flex;
+    align-items: center;
+ 
+    background: #70c9e3; /* Old browsers */
+    background: -moz-linear-gradient(top,  #70c9e3 0%, #39a0be 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#70c9e3), color-stop(100%,#39a0be)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #70c9e3 0%,#39a0be 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #70c9e3 0%,#39a0be 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #70c9e3 0%,#39a0be 100%); /* IE10+ */
+    background: linear-gradient(top,  #70c9e3 0%,#39a0be 100%); /* W3C */
+
+    height: 40pxa;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  
+  .secondtopnav a {
+    color: #19667d;
+    float: left;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    width: 75px;
+  }
+  
+  .secondtopnav a:hover {
+    height: 40px;
+    padding-top: 30px;
+    background: #70c9e3; /* Old browsers */
+  }
+  
+  .secondtopnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  #search-container {
+    position: absolute;
+    right: 110px;
+    height: 15px;
+  }
+  #search-container input {
+    position: absolute;
+    width: 130px;
+  }
+  
+#about {display: none;}
+#contact {display: none;}
+#line3 {display:none;}
+  
+.container {
+    position: absolute;
+    margin: auto;
+    padding: 0px;
+    margin-top: 130px;
+}
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+
+}
+.post1 {
+    height: 260px;
+    width: 320px;
+    background-color: whitesmoke;
+    position: relative;
+}
+#post1title {
+    position: absolute;
+    bottom: 5px;
+}
+.post2 {
+    height: 260px;
+    width: 320px;
+    background-color: whitesmoke;
+    position: relative;
+    justify-content: center;
+}
+.post3 {
+    height: 260px;
+    width: 320px;
+    background-color: whitesmoke;
+    position: relative;
+    justify-content: center;
+}
+#img {
+    width: 320px;
+    height: 180;
+    margin: 0px;
+}
+  .sidebar {
+    display: none;
+  }
+
+  .sidepanel {
+    display: block;
+  }
+  .openbtn {
+    display: block;
+  }
 }

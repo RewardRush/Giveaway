@@ -6,9 +6,12 @@
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <dev class="header">
+  <div class="header">
+    <img class="logowhite" src="logo.png" alt="">
+    <h2 id="headertitle">BlinkInk</h2>
 
     <div class="topnav">
       <img class="logo" src="logo.png" alt="">
@@ -18,15 +21,31 @@
     </div>
 
     <div class="secondtopnav">
-      <a class="home" href="#home">Home</a>
-      <a class="news" href="#news">News</a>
-      <a class="contact" href="#contact">Contact</a>
-      <a class="about" href="#about">About</a>
+      <a id="home" href="#home">Home</a>
+      <a id="news" href="#news">News</a>
+      <a id="contact" href="#contact">Contact</a>
+      <a id="about" href="#about">About</a>
       <dev id="line1"></dev>
       <dev id="line2"></dev>
       <dev id="line3"></dev>
       <dev id="line4"></dev>
+      <div id="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+        </form>
+      </div>
     </div>
+
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+
     <div class="dropdown">
       <button class="dropbtn">All category</button>
       <div class="dropdown-content">
@@ -36,17 +55,27 @@
       </div>
     </div>
 
-  </dev>
+    <div class="menu">
+      <button class="menubtn" onclick="toggleDropdown()">All category</button>
+      <div class="menu-content" id="mymenu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+  </div>
 
 <div class="container">
   <div class="grid">
     <div class="post1">
       <img src="images/keyboard.jpg" id="img" alt="">
-      <h4 id="post1title">Cpa marketing Earn $10 per hour !! Best traffic source for beginners !! CPA marketing live income</h4>
+      <h4 id="post1title">Redragon Fizz K617 Review: The Ultimate Mechanical Gaming Keyboard</h4>
     </div>
 
     <div class="post2">
       <img src="images/mouse.jpg" id="img" alt="">
+      <h4>A4Tech Bloody X5 Max: Unleash Your Gaming Potential</h4>
     </div>
 
     <div class="post3">
@@ -63,6 +92,8 @@
     <li><a href="http://www.youtube.com" target="_blank" rel="noopener noreferrer">The best midrange gaming mouse</a></li>
   </ul>
 </dev>
+
+<script src="script.js"></script>
   
 </body>
 </html>
