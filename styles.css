@@ -306,11 +306,13 @@ body {
     font-size: 17px;
   }
   #search-container {
+    display: none;  
     position: absolute;
     right: 110px;
     height: 15px;
   }
   #search-container input {
+    display: none;  
     position: absolute;
     width: 130px;
   }
