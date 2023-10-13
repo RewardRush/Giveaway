@@ -116,8 +116,13 @@
       'width' : 320,
       'params' : {}
     };
-    document.write('<scr' + 'ipt type="text/javascript" src="//www.profitablecreativeformat.com/33bffe0e38bbbdad10dd8c6ceaf89705/invoke.js"></scr' + 'ipt>');
+    var scriptElement = document.createElement('script');
+    scriptElement.type = 'text/javascript';
+    scriptElement.src = '//www.profitablecreativeformat.com/33bffe0e38bbbdad10dd8c6ceaf89705/invoke.js';
+    scriptElement.setAttribute('loading', 'lazy');
+    document.body.appendChild(scriptElement);
   </script>
+  
 </div>
 
 <dev class="sidebar">
