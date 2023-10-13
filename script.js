@@ -16,3 +16,25 @@ function openNav() {
   function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
   }
+
+  let currentSlide = 0;
+
+  function prevSlide() {
+      if (currentSlide > 0) {
+          currentSlide--;
+          updateSlider();
+      }
+  }
+
+  function nextSlide() {
+      if (currentSlide < 2) {
+          currentSlide++;
+          updateSlider();
+      }
+  }
+
+  function updateSlider() {
+      const slider = document.querySelector('.slider');
+      const slideWidth = slider.clientWidth / 6;
+      slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+  }
