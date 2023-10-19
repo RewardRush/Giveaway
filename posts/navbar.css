@@ -1,0 +1,151 @@
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    left: 0;
+    height: 40px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: start;
+    margin-left: 10px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    text-decoration: none;
+    display: block;
+    padding-left: 10px;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+  @media (max-width: 768px) {
+    .menubtn {
+      background-color: #04AA6D;
+      color: white;
+      font-size: 16px;
+      border: none;
+      position: absolute;
+      right: 0;
+      height: 40px;
+      width: 110px;
+      display: block;
+      align-items: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+    .dropdown {
+      display: none;
+    }
+    .menu {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .menu-content {
+      display: none;
+      position: relative;
+      background-color: #f1f1f1;
+      width: 110px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      text-align: start;
+      margin-left: 0px;
+      margin-top: 80px;
+    }
+    
+    .menu-content a {
+      color: black;
+      padding-bottom: 8px;
+      padding-top: 8px;
+      text-decoration: none;
+      display: block;
+      padding-left: 10px;
+    }
+    
+    .menu-content a:hover {background-color: #ddd;}
+    
+    .menu:hover .menu-content {display: block;}
+    
+    .menu:hover .menubtn {background-color: #3e8e41;}
+
+    /* The sidepanel menu */
+.sidepanel {
+  height: 100%; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  text-align: left;
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  height: 40px;
+  width: 40px;
+  margin-top: 40px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+  }

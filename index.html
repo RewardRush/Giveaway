@@ -10,6 +10,13 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+  <div class="top">
+    <p>Subscribe to the newslater </p>
+  <div>
+    <i class="material-icons">mail</i>
+    <i class="material-icons">facebook</i>
+  </div>
+  </div>
   <div class="header">
     <img class="logowhite" src="logo.png" alt="">
     <h2 id="headertitle">BlinkInk</h2>
@@ -75,6 +82,7 @@
   </div>
 
   <div class="container">
+    <div class="nav-btn prev" onclick="prevSlide()">&#9664;</div>
   <div class="slider-container">
     <div class="slider">
         <div class="slide">
@@ -85,8 +93,8 @@
           </div>          
           <div class="slide" id="slide1">
             <p id="posttitle">Redragon Fizz K617 Review: The Ultimate Mechanical Gaming Keyboard</p>
-            <img src="images/keyboard.jpg" id="img" alt="">
-            <p id="postpara">The Redragon Fizz K617 is a fantastic addition to Redragon's lineup of gaming peripherals. With its sleek design, choice of key switches...</p>
+            <img src="images/mouse.jpg" id="img" alt="">
+            <p id="postpara">In the world of gaming peripherals, A4Tech Bloody has been a prominent name for quite some time. Known for their innovative designs and cutting-edge technology, they have consistently delivered...</p>
             <button type="button" onclick="location.href= 'posts/post1.html';" class="block">Read more >></button>
           </div>  
           <div class="slide">
@@ -103,15 +111,58 @@
           </div>  
     </div>
  </div>
- <div class="nav-btn prev" onclick="prevSlide()">&#9664;</div>
  <div class="nav-btn next" onclick="nextSlide()">&#9654;</div>
+</div>
+
+<div class="container-bottom">
+  <div id="left-posts">
+    <div class="circle"></div>
+    <h3 id="at-a-glance">At a glance </h3>
+    <div id="all-leftpost">
+      <h4>Technology</h4>
+      <div id="all-leftpost-content">
+        <h3>Redragon Fizz K617 Review</h3>
+        <p>The Redragon Fizz K617 is a fantastic addition to Redragon's lineup of gaming peripherals. With its sleek design, choice of key switches...</p>
+      </div>
+      <img src="images/quantum-computer.jpg" alt="">
+    </div>
+    <hr>
+    <div id="all-leftpost">
+      <h4>Science</h4>
+      <div id="all-leftpost-content">
+        <h3>What is natural science? </h3>
+        <p>Natural science is one of the branches of science concerned with the description, understanding and prediction of natural phenomena, based on empirical evidence from observation and experimentation.</p>
+      </div>
+      <img src="images/nature-science.jpg" alt="">
+    </div>
+    <hr>
+  </div>
+  <div id="popular-post">
+    <h3 style="margin-left: 10px; font-family: sans-serif;">Popular posts </h3>
+    <div id="all-popularpost">
+      <div style="background-color: #111; height: 100px; width: 1px; padding: .5px; margin-right: 20px; margin-left: 10px;"></div>
+      <div id="all-popularpost-content">
+        <h3>The Vanishing Light: Why There Are Fewer Fireflies Than Before</h3>
+        <p>While the exact reason isn't known, three main factors are suspected: Habitat loss, toxic chemicals (which tend to linger in aquatic environments where fireflies start their lives) and light pollution.</p>
+      </div>
+      <img src="images/firefly.jpg" alt="">
+    </div>
+    <div id="all-popularpost">
+      <div style="background-color: #111; height: 100px; width: 1px; padding: .5px; margin-right: 20px; margin-left: 10px;"></div>
+      <div id="all-popularpost-content">
+        <h3>Why Wikipedia's UI Still Looks Like a Classic Website</h3>
+        <p>In an era of sleek, modern web design, Wikipedia stands out as a shining example of consistency. While the internet has evolved dramatically since its inception, Wikipedia's user interface (UI) has remained largely unchanged, preserving the classic design that has been familiar to users for over two decades.</p>
+      </div>
+      <img src="images/wiki.webp" alt="">
+    </div>
+  </div>
 </div>
 
 <div class="ad-50x320">
 </div>
 
 <dev class="sidebar">
-  <h3 id="sidebartitle">Explore Random topics</h3>
+  <h2 id="sidebartitle">Discover top picks</h2>
   <ul id="sidebarlist">
     <li><a href="https://www.youtube.com">Cpa marketing Earn $10 per hour</a></li>
     <li><a href="http://www.youtube.com" target="_blank" rel="noopener noreferrer">The best midrange gaming mouse</a></li>
